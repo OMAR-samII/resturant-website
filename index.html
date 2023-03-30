@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#reservation">Reservation</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1>Welcome to Our Restaurant</h1>
+        </div>
+      </div>
+    </header>
+    <section id="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>Some information about the restaurant here.</p>
+      </div>
+    </section>
+    <section id="menu">
+      <div class="container">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img src="images/dish1.jpg" alt="Dish 1">
+            <h3>Dish 1</h3>
+            <p>Description of dish 1.</p>
+            <span>$10.00</span>
+          </div>
+          <div class="menu-item">
+            <img src="images/dish2.jpg" alt="Dish 2">
+            <h3>Dish 2</h3>
+            <p>Description of dish 2.</p>
+            <span>$12.00</span>
+          </div>
+          <div class="menu-item">
+            <img src="images/dish3.jpg" alt="Dish 3">
+            <h3>Dish 3</h3>
+            <p>Description of dish 3.</p>
+            <span>$15.00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="reservation">
+      <div class="container">
+        <h2>Reservation</h2>
+        <form>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date">
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time">
+          <label for="guests">Guests:</label>
+          <input type="number" id="guests" name="guests" min="1" max="10">
+          <button type="submit">Book a Table</button>
+        </form>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p>&copy; 2021 Restaurant Website. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
